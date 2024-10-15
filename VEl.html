@@ -3,22 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coming Soon</title>
+    <title>VEL.</title>
     <link rel="stylesheet" href="VEL.css">
+   
 </head>
 <body>
-    <div id="countdown">
-        <h1>Coming Soon!</h1>
-        <p>Our website is under construction. We'll be here soon with our new awesome site.</p>
-        <ul>
-            <li><span id="days"></span> Days</li>
-            <li><span id="hours"></span> Hours</li>
-            <li><span id="minutes"></span> Minutes</li>
-            <li><span id="seconds"></span> Seconds</li>
+    <nav class="navbar">
+        <img src="IMG_20241014_154201.jpg" alt="Logo">
+        <ul id="nav-links">
+            <li><a href="VEL.html">Home</a></li>
+            <li><a href="Catalog">Catalog</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
+        <span class="menu-icon" onclick="toggleMenu()">☰</span>
+    </nav>
+    <!-- Image slider -->
+    <div class="slider">
+        <div class="slides">
+            <img src="pexels-cottonbro-5465177.jpg" alt="Slide 1">
+            <img src="pexels-ivan-samkov-8499033.jpg" alt="Slide 2">
+            <img src="pexels-olly-3769131.jpg" alt="Slide 3">
+        </div>
+        <button class="prev" onclick="prevSlide()">❮</button>
+        <button class="next" onclick="nextSlide()">❯</button>
     </div>
-    <script src="VEL.js"></script>
+
+    <!--  -->
+    <nav>
+        <ul>
+            <li><a href="#" onclick="filterProducts('all')">All</a></li>
+            <li><a href="#" onclick="filterProducts('women')">Women</a></li>
+            <li><a href="#" onclick="filterProducts('men')">Men</a></li>
+            <li><a href="#" onclick="filterProducts('kids')">Kids</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="product-grid" id="productGrid">
+    <!-- Products will be inserted dynamically -->
+</section>
+
+<footer>
+    <p>&copy; 2024 VEL.</p>
+</footer>
+
+
+   <script src="VEL.js"></script>
 </body>
 </html>
+
+
 
 
