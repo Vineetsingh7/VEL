@@ -1,0 +1,199 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: black;
+
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 10px 20px;
+}
+.navbar img {
+    height: 40px;
+}
+.navbar ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.navbar li {
+    margin: 0 10px;
+}
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    display: block;
+}
+.navbar a:hover {
+    background-color: #575757;
+    border-radius: 4px;
+}
+.navbar .menu-icon {
+    display: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+@media (max-width: 768px) {
+    .navbar ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+    .navbar ul.active {
+        display: contents;
+    }
+    .navbar .menu-icon {
+        display: flex;
+    }
+}   
+
+/* Slider bar */
+
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.slider {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.slides img {
+    width: 100%;
+    height: fit-content;
+}
+.slider .prev, .slider .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgb(11, 11, 11);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+.slider .prev {
+    left: 10px;
+}
+.slider .next {
+    right: 10px;
+}
+@media (max-width: 768px) {
+    .slider .prev, .slider .next {
+        padding: 5px;
+    }
+}
+/* Catalog */
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    /* background-image: url('pexels-nietjuh-934070.jpg'); */
+    background-size: cover; /* This makes the image cover the entire element */
+    background-position: center; /* This centers the image */
+    background-repeat: no-repeat; /* This prevents the image from repeating */
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #ddd;
+    border-bottom: #fff;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: black
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
+}
+
+nav ul li a:hover {
+    color: #1325ad;
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: left;
+
+}
+
+.product-item {
+    background-color: white;
+    border: 1px solid black;
+    padding: 10px;
+    width: 160px;
+    text-align: left;
+    transition: transform 0.2s;
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product-item:hover {
+    transform: scale(1.05);
+}
+
+.product-name {
+    font-size: 1.1em;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.product-price {
+    color: green;
+    font-size: 1.2em;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .product-grid {
+        flex-direction: row ;
+        align-items: normal;
+    }
+}
