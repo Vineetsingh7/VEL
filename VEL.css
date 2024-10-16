@@ -15,7 +15,7 @@ body {
     height: 40px;
 }
 .navbar ul {
-    list-style: none;
+    list-style: lower-latin;
     display: flex;
     margin: 0;
     padding: 0;
@@ -26,12 +26,12 @@ body {
 .navbar a {
     color: white;
     text-decoration: none;
-    padding: 8px 12px;
+    padding: 8px 8px;
     display: block;
 }
 .navbar a:hover {
-    background-color: #575757;
-    border-radius: 4px;
+    background-color: #fff;
+    border-radius: 0%;
 }
 .navbar .menu-icon {
     display: none;
@@ -147,7 +147,7 @@ nav ul li a:hover {
 .product-grid {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 26px;
     padding: 20px;
     justify-content: left;
 

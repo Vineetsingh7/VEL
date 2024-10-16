@@ -1,3 +1,4 @@
+    
 function toggleMenu() {
     const navLinks = document.getElementById('nav-links');
     navLinks.classList.toggle('active');
@@ -29,10 +30,11 @@ showSlide(slideIndex);
 // Example Product Data
 let products = [
     { id: 1, name: "Women's T-Shirt", category: "women", price: "₹599", image: "pexels-mart-production-9558583.jpg" },
-    { id: 2, name: "Men's Jacket", category: "men", price: "₹599", image: "pexels-amanjakhar-1124468.jpg" },
-    { id: 3, name: "Kids' Hoodie", category: "kids", price: "₹599", image: "pexels-atef-khaled-825144-1833082.jpg" },
+    { id: 2, name: "Men's", category: "men", price: "₹599", image: "Untitled Project (4).jpg" },
+    { id: 3, name: "OM oversize T shirt", category: "kids", price: "₹599", image: "Untitled Project (2).jpg" },
     { id: 4, name: "Women's Dress", category: "women", price: "₹599", image: "woman-7633843_1920.jpg" },
-    { id: 5, name: "Men's", category: "men", price: "₹599", image: "man-1866572_1920.jpg" }
+    { id: 5, name: "Men's", category: "men", price: "₹599", image: "Fallen Skeleton Wings (1).jpg" },
+    { id: 6, name: " Beastgym Oversize T shirts", category: "kids", price: "₹599", image: "Untitled Project.jpg" },
 ];
 
 // Function to display products
